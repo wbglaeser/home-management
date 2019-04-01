@@ -1,0 +1,30 @@
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+}
+
+ul.ui-autocomplete {
+    z-index: 1000;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.ui-widget-content {
+    background: white;
+    font: Helvetica Neue Light;
+    color: #868e96;
+}
+
+.bquote {
+    opacity: 0;
+    transition: opacity 0s 0.5s;
+}
+
+.bquote:hover {
+    opacity: 1;
+    transition: opacity 0s;
+}
+
+.row a {
+    text-decoration: none;
+}

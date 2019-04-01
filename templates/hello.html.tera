@@ -1,0 +1,11 @@
+{% extends "base" %}
+
+{% block content %}
+<h1>This is our example blog application</h1>
+<p>
+    Let's explore what we can do with
+    \n
+    <p>{{ name }}</p> and
+    <p>{{ age }}</p> and
+</p>
+{% endblock content %}
