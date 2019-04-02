@@ -12,94 +12,60 @@
 </head>
 <body>
 
-  <div class="container-fluid">
-      <div class="row">
+    <nav class="navbar navbar-white bg-secondary">
+        <a href="/budgetary_quote">
+            <span class="navbar-text text-light">
+                Home
+            </span>
+        </a>
+    </nav>
 
-        <div class="col-md-4">
-            <a href="/budgetary_quote" class="custom-card">
-                <div class="card bg-light text-center mt-4 bquote" style="height: 30vh;">
-                    <div class="card-body align-items-center d-flex justify-content-center">
-                        <h3>Budgetary Quote</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="/budgetary_quote" class="custom-card">
+                    <div class="card border-primary text-center mt-4 cardlib rounded-0" style="height: 43vh;">
+                        <div class="card-body align-items-center d-flex justify-content-center">
+                            <h3>Library</h3>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <a href="/budgetary_quote" class="custom-card">
-                <div class="card bg-light text-center mt-4 bquote" style="height: 30vh;">
-                    <div class="card-body align-items-center d-flex justify-content-center">
-                        <h3>Budgetary Quote</h3>
+                <a href="/budgetary_quote" class="custom-card">
+                    <div class="card border-secondary text-center mt-4 cardtemp rounded-0" style="height: 43vh;">
+                        <div class="card-body align-items-center d-flex justify-content-center">
+                            <h3>Temperature</h3>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <a href="/budgetary_quote" class="custom-card">
-                <div class="card bg-light text-center mt-4 bquote" style="height: 30vh;">
-                    <div class="card-body align-items-center d-flex justify-content-center">
-                        <h3>Budgetary Quote</h3>
+            </div>
+
+            <div class="col-md-6">
+                <a href="/budgetary_quote" class="custom-card">
+                    <div class="card border-danger text-center mt-4 cardsup rounded-0" style="height: 43vh;">
+                        <div class="card-body align-items-center d-flex justify-content-center">
+                            <h3>Supplies</h3>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+
+                <a href="/budgetary_quote" class="custom-card">
+                    <div class="card border-warning text-center mt-4 cardsec rounded-0" style="height: 43vh;">
+                        <div class="card-body align-items-center d-flex justify-content-center">
+                            <h3>Security</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-
-        <div class="col-md-4">
-            <a href="/budgetary_quote" class="custom-card">
-                <div class="card bg-light text-center mt-4 bquote" style="height: 30vh;">
-                    <div class="card-body align-items-center d-flex justify-content-center">
-                        <h3>Budgetary Quote</h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/budgetary_quote" class="custom-card">
-                <div class="card bg-light text-center mt-4 bquote" style="height: 30vh;">
-                    <div class="card-body align-items-center d-flex justify-content-center">
-                        <h3>Budgetary Quote</h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/budgetary_quote" class="custom-card">
-                <div class="card bg-light text-center mt-4 bquote" style="height: 30vh;">
-                    <div class="card-body align-items-center d-flex justify-content-center">
-                        <h3>Budgetary Quote</h3>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-4">
-            <a href="/budgetary_quote" class="custom-card">
-                <div class="card bg-light text-center mt-4 bquote" style="height: 30vh;">
-                    <div class="card-body align-items-center d-flex justify-content-center">
-                        <h3>Budgetary Quote</h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/budgetary_quote" class="custom-card">
-                <div class="card bg-light text-center mt-4 bquote" style="height: 30vh;">
-                    <div class="card-body align-items-center d-flex justify-content-center">
-                        <h3>Budgetary Quote</h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/budgetary_quote" class="custom-card">
-                <div class="card bg-light text-center mt-4 bquote" style="height: 30vh;">
-                    <div class="card-body align-items-center d-flex justify-content-center">
-                        <h3>Budgetary Quote</h3>
-                    </div>
-                </div>
-            </a>
-        </div>
-      </div>
     </div>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    </body>
+</body>
 </html>

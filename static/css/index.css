@@ -15,13 +15,31 @@ ul.ui-autocomplete {
     color: #868e96;
 }
 
-.bquote {
-    opacity: 0;
-    transition: opacity 0s 0.5s;
+.cardlib:hover {
+    background: #0275d8;
+    color: white;
+    opacity: 0.6;
+    transition: opacity 0s;
 }
 
-.bquote:hover {
-    opacity: 1;
+.cardsup:hover {
+    background: #d9534f;
+    color: white;
+    opacity: 0.6;
+    transition: opacity 0s;
+}
+
+.cardtemp:hover {
+    background: #292b2c;
+    color: white;
+    opacity: 0.6;
+    transition: opacity 0s;
+}
+
+.cardsec:hover {
+    background: #f0ad4e;
+    color: white;
+    opacity: 0.85;
     transition: opacity 0s;
 }
 
