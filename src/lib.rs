@@ -18,6 +18,13 @@ fn root() -> Template {
     Template::render("root", &context)
 }
 
+#[get("/library_home")]
+fn library_home() -> Template {
+    let context = HashMap::<String, String>::new();
+    Template::render("library_home", &context)
+}
+
+
 // Serve static files (e.g. css or js)
 #[get("/static/<file..>")]
 fn file(file:PathBuf) -> Option<NamedFile> {
@@ -26,7 +33,7 @@ fn file(file:PathBuf) -> Option<NamedFile> {
 
 pub fn online() -> () {
     rocket::ignite()
-        .mount("/", routes![root, file])
+        .mount("/", routes![root, file, library_home])
         .mount("/static", StaticFiles::from("/static"))
         .attach(Template::fairing())
         .launch();

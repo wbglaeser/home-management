@@ -1,0 +1,37 @@
+{% extends "index" %}
+
+
+{% block content %}
+
+<div class="col-md-12">
+
+    <!-- Upper Bar for input -->
+    <div class="card bg-light rounded-0 mt-4 align-items-center d-flex justify-content-around" style="height: 18vh;">
+        <div class="card-body align-items-center d-flex justify-content-between" style="width: 100rem;">
+            <div class="card bg-secondary border-0" style="height: 10vh; width: 60rem;">
+                <div class="card-body align-items-center d-flex justify-content-center">
+                    <form>
+                        <div class="form-group text-white">
+                            <label for="exampleInputEmail1">Search Library</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card bg-secondary" style="height: 10vh; width: 20rem;">
+                <div class="card-body align-items-center d-flex justify-content-center">
+                    <!-- Button add modal -->
+                    <button type="button" class="btn btn-secondary"">
+                        Add New Entry
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lower Bar for output -->
+    <div class="card bg-light text-center rounded-0 mt-4 align-items-center d-flex justify-content-around" style="height: 68vh;">
+    </div>
+</div>
+{% endblock content %}

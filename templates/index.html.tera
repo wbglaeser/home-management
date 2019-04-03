@@ -13,7 +13,7 @@
 <body>
 
     <nav class="navbar navbar-white bg-secondary">
-        <a href="/budgetary_quote">
+        <a href="/">
             <span class="navbar-text text-light">
                 Home
             </span>
@@ -22,42 +22,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
-                <a href="/budgetary_quote" class="custom-card">
-                    <div class="card border-primary text-center mt-4 cardlib rounded-0" style="height: 43vh;">
-                        <div class="card-body align-items-center d-flex justify-content-center">
-                            <h3>Library</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="/budgetary_quote" class="custom-card">
-                    <div class="card border-secondary text-center mt-4 cardtemp rounded-0" style="height: 43vh;">
-                        <div class="card-body align-items-center d-flex justify-content-center">
-                            <h3>Temperature</h3>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-
-            <div class="col-md-6">
-                <a href="/budgetary_quote" class="custom-card">
-                    <div class="card border-danger text-center mt-4 cardsup rounded-0" style="height: 43vh;">
-                        <div class="card-body align-items-center d-flex justify-content-center">
-                            <h3>Supplies</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="/budgetary_quote" class="custom-card">
-                    <div class="card border-warning text-center mt-4 cardsec rounded-0" style="height: 43vh;">
-                        <div class="card-body align-items-center d-flex justify-content-center">
-                            <h3>Security</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            {% block content %}{% endblock%}
         </div>
     </div>
 
