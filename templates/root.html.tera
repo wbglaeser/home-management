@@ -1,11 +1,10 @@
 {% extends "index" %}
 
-
 {% block content %}
 
 <div class="col-md-6">
     <a href="/library_home" class="custom-card">
-        <div class="card border-primary text-center mt-4 cardlib rounded-0" style="height: 43vh;">
+        <div class="card border-primary text-center mt-4 cardlib" style="height: 43vh;">
             <div class="card-body align-items-center d-flex justify-content-center">
                 <h3>Library</h3>
             </div>
@@ -13,7 +12,7 @@
     </a>
 
     <a href="/budgetary_quote" class="custom-card">
-        <div class="card border-secondary text-center mt-4 cardtemp rounded-0" style="height: 43vh;">
+        <div class="card border-secondary text-center mt-4 cardtemp" style="height: 43vh;">
             <div class="card-body align-items-center d-flex justify-content-center">
                 <h3>Temperature</h3>
             </div>
@@ -24,7 +23,7 @@
 
 <div class="col-md-6">
     <a href="/budgetary_quote" class="custom-card">
-        <div class="card border-danger text-center mt-4 cardsup rounded-0" style="height: 43vh;">
+        <div class="card border-danger text-center mt-4 cardsup" style="height: 43vh;">
             <div class="card-body align-items-center d-flex justify-content-center">
                 <h3>Supplies</h3>
             </div>
@@ -32,7 +31,7 @@
     </a>
 
     <a href="/budgetary_quote" class="custom-card">
-        <div class="card border-warning text-center mt-4 cardsec rounded-0" style="height: 43vh;">
+        <div class="card border-warning text-center mt-4 cardsec" style="height: 43vh;">
             <div class="card-body align-items-center d-flex justify-content-center">
                 <h3>Security</h3>
             </div>

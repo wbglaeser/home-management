@@ -1,6 +1,5 @@
 {% extends "index" %}
 
-
 {% block content %}
 
 <div class="col-md-12">
@@ -8,8 +7,8 @@
     <!-- Upper Bar for input -->
     <div class="card bg-light rounded-0 mt-4 align-items-center d-flex justify-content-around" style="height: 18vh;">
         <div class="card-body align-items-center d-flex justify-content-between" style="width: 100rem;">
-            <div class="card bg-secondary border-0" style="height: 10vh; width: 60rem;">
-                <div class="card-body align-items-center d-flex justify-content-center">
+            <div class="card bg-secondary border-0" style="height: 10vh; width: 40rem;">
+                <div class="card-body align-items-center d-flex justify-content-start">
                     <form>
                         <div class="form-group text-white">
                             <label for="exampleInputEmail1">Search Library</label>
@@ -19,12 +18,59 @@
                 </div>
             </div>
 
-            <div class="card bg-secondary" style="height: 10vh; width: 20rem;">
+            <div class="card bg-secondary" style="height: 10vh; width: 40rem;">
                 <div class="card-body align-items-center d-flex justify-content-center">
+
                     <!-- Button add modal -->
-                    <button type="button" class="btn btn-secondary"">
-                        Add New Entry
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModaladd">
+                        Produce New Quote
                     </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModaladd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document" style="width: 50rem;">
+                            <div class="modal-content" >
+
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Configure New Entry</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <!-- Body -->
+                                <div class="modal-body d-flex align-content-center justify-content-around">
+
+                                    <!-- Input Values -->
+                                    <form autocomplete="off" action='/empty' id="search_form" method='POST'>
+                                        <div class="form-group ui-front ui-widget">
+                                            <label for="input-title-add">Title</label>
+                                            <input type="text" class="form-control form-control-lg" id="input-title-add" name="title">
+                                        </div>
+                                        <div class="form-group ui-front">
+                                            <label for="input-author-add">Author</label>
+                                            <input type="text" class="form-control form-control-lg" id="input-author-add" name="author">
+                                        </div>
+                                        <div class="form-group ui-front">
+                                            <label for="input-genre-add">Genre</label>
+                                            <input type="text" class="form-control form-control-lg" id="input-genre-add" name="genre">
+                                        </div>
+                                        <div class="form-group ui-front">
+                                            <label for="input-description-add">Description</label>
+                                            <input type="text" class="form-control form-control-lg" id="input-description-add" name="description">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- Footer -->
+                                <div class="modal-footer justify-content-between">
+                                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                                    <button onclick="form_submit()" type="submit" class="btn btn-secondary">Produce new quote</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

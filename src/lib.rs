@@ -11,6 +11,15 @@ use std::path::Path;
 use rocket::response::NamedFile;
 use std::collections::HashMap;
 use rocket_contrib::serve::StaticFiles;
+use rocket::request::LenientForm;
+
+#[derive(FromForm)]
+struct Task {
+    title: String,
+    author: String,
+    genre: String,
+    description: String
+}
 
 #[get("/")]
 fn root() -> Template {
@@ -24,6 +33,11 @@ fn library_home() -> Template {
     Template::render("library_home", &context)
 }
 
+#[post("/empty", data="<task>")]
+fn new_entry(task: LenientForm<Task>) -> Template{
+    let context = HashMap::<String, String>::new();
+    Template::render("library_home", &context)
+}
 
 // Serve static files (e.g. css or js)
 #[get("/static/<file..>")]
@@ -33,7 +47,7 @@ fn file(file:PathBuf) -> Option<NamedFile> {
 
 pub fn online() -> () {
     rocket::ignite()
-        .mount("/", routes![root, file, library_home])
+        .mount("/", routes![root, file, library_home, new_entry])
         .mount("/static", StaticFiles::from("/static"))
         .attach(Template::fairing())
         .launch();

@@ -15,31 +15,55 @@ ul.ui-autocomplete {
     color: #868e96;
 }
 
+.cardlib {
+    background: #0275d8;
+    color: white;
+    opacity: 0.5;
+    transition: opacity 0s;
+}
 .cardlib:hover {
     background: #0275d8;
     color: white;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: opacity 0s;
 }
 
+.cardsup {
+    background: #d9534f;
+    color: white;
+    opacity: 0.5;
+    transition: opacity 0s;
+}
 .cardsup:hover {
     background: #d9534f;
     color: white;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: opacity 0s;
 }
 
+.cardtemp {
+    background: #292b2c;
+    color: white;
+    opacity: 0.5;
+    transition: opacity 0s;
+}
 .cardtemp:hover {
     background: #292b2c;
     color: white;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: opacity 0s;
 }
 
+.cardsec {
+    background: #f0ad4e;
+    color: white;
+    opacity: 0.5;
+    transition: opacity 0s;
+}
 .cardsec:hover {
     background: #f0ad4e;
     color: white;
-    opacity: 0.85;
+    opacity: 0.8;
     transition: opacity 0s;
 }
 
